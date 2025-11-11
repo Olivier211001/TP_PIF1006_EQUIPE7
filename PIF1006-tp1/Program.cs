@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+
+
 
 namespace PIF1006_tp1
 {
@@ -56,6 +59,21 @@ namespace PIF1006_tp1
             //
             //      (5) Au moment où l'utilisateur choisit de quitter, un message s'affiche lui disant que l'application va se fermer après
             //          avoir appuyé sur ENTER.
+
+            ////////////////////////////// code ICI //////////////////////////////////////////////////////////////////////////
+            // Étape(1)
+
+            // Étape(2)
+            // fichier d'automate chargé au démarrage *Modifier le fichier Test.txt au besoin*
+            string fileName = "Test.txt"; // nom du fichier
+            // chemin absolue du fichier
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+            if (!File.Exists(filePath)){
+                Console.WriteLine($"Fichier non trouvé : {filePath}");
+            }
+            else{
+                Automate automate = new Automate(filePath);
+            }
         }
     }
 }

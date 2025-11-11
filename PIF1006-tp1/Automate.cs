@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,33 @@ namespace PIF1006_tp1
             //     l'automate est considéré comme "invalide" (la propriété IsValid doit alors valoir faux)
             //   - Lorsque des lignes (ou l'automate) sont ignorées ou à la fin l'automate rejeté, cela doit être indiqué à l'utilisateur
             //     à la console avec la ligne/raison du "rejet".
+
+            ///////////////////////////////////////////////////////////////code de la solution ICI///////////////////////////////////////////////////////////////////
+            // On valide si le fichier est vide
+            if (string.IsNullOrWhiteSpace(filePath)){
+                throw new ArgumentException("filePath est vide.");
+            }
+            // On valide si le fichier est introuvables    
+            if (!File.Exists(filePath)){
+                throw new FileNotFoundException("Fichier introuvable.", filePath);
+            }
+            foreach (var line in File.ReadAllLines(filePath)){
+                string premierTerme = "";
+                // code pour enlever les espaces au début et à la fin 
+                string trimmed = line.Trim();
+                // code pour ignorer les espaces vides 
+                if (string.IsNullOrEmpty(trimmed))
+                    continue;
+                // code pour séparer les termes dans la ligne 
+                string[] parts = trimmed.Split((char[])null, StringSplitOptions.RemoveEmptyEntries);
+                // trouver le premier terme
+                if (parts.Length > 0)
+                {
+                    premierTerme = parts[0];
+                    Console.WriteLine(premierTerme);
+                }
+            }    
+
         }
 
         public bool Validate(string input)
