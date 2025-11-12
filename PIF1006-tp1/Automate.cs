@@ -63,6 +63,14 @@ namespace PIF1006_tp1
             if (!File.Exists(filePath)){
                 throw new FileNotFoundException("Fichier introuvable.", filePath);
             }
+            // setter les états
+            setStates(filePath);
+            // setter les transitions
+            setTransitions(filePath);
+
+        }
+
+        public void setStates(string filePath){
             foreach (var line in File.ReadAllLines(filePath)){
                 string premierTerme = "";
                 // code pour enlever les espaces au début et à la fin 
@@ -73,13 +81,56 @@ namespace PIF1006_tp1
                 // code pour séparer les termes dans la ligne 
                 string[] parts = trimmed.Split((char[])null, StringSplitOptions.RemoveEmptyEntries);
                 // trouver le premier terme
-                if (parts.Length > 0)
-                {
+                if (parts.Length > 0){
                     premierTerme = parts[0];
-                    Console.WriteLine(premierTerme);
                 }
-            }    
+                // premierTerme is state ? 
+                if (premierTerme.Equals("state", StringComparison.OrdinalIgnoreCase)){
+                    // État final ? 
+                    if (parts[2] == "1"){
+                        State newState = new State(parts[1], true); // création de l'état 
+                        if (parts[3] == "1") // État initial ? 
+                        {
+                            InitialState = newState;
+                        }
+                        States.Add(newState); // ajout dans la liste d'états 
+                    }
+                    else{
+                        State newState = new State(parts[1], false); // création de l'état 
+                        if (parts[3] == "1") // État initial ? 
+{
+                            InitialState = newState;
+                        }
+                        States.Add(newState); // ajout dans la liste d'états 
+                    }
+                }
+            }
+        }
 
+        public void setTransitions(string filePath){
+            foreach (var line in File.ReadAllLines(filePath)){
+                string premierTerme = "";
+                // code pour enlever les espaces au début et à la fin 
+                string trimmed = line.Trim();
+                // code pour ignorer les espaces vides 
+                if (string.IsNullOrEmpty(trimmed))
+                    continue;
+                // code pour séparer les termes dans la ligne 
+                string[] parts = trimmed.Split((char[])null, StringSplitOptions.RemoveEmptyEntries);
+                // trouver le premier terme
+                if (parts.Length > 0){
+                    premierTerme = parts[0];
+                }
+                // premierTerme is transition ? 
+                if (premierTerme.Equals("transition", StringComparison.OrdinalIgnoreCase)){
+                    foreach(var state in States){
+                        if(state.Equals(parts[1])){
+                           // rendu ici
+                           // state.Transitions. 
+                        }
+                    }
+                }
+            }
         }
 
         public bool Validate(string input)
