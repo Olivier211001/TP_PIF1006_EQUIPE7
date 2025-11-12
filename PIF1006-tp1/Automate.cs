@@ -98,7 +98,7 @@ namespace PIF1006_tp1
                     else{
                         State newState = new State(parts[1], false); // création de l'état 
                         if (parts[3] == "1") // État initial ? 
-{
+                        {
                             InitialState = newState;
                         }
                         States.Add(newState); // ajout dans la liste d'états 
