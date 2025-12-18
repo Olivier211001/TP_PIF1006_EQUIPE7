@@ -73,7 +73,7 @@ namespace PIF1006_tp1
 
         }
 
-        public void setStates(string filePath){
+        private void setStates(string filePath){
             foreach (var line in File.ReadAllLines(filePath)){
                 string premierTerme = "";
                 // code pour enlever les espaces au début et à la fin 
@@ -110,7 +110,7 @@ namespace PIF1006_tp1
             }
         }
 
-        public void setTransitions(string filePath){
+        private void setTransitions(string filePath){
             foreach (var line in File.ReadAllLines(filePath)){
                 string premierTerme = "";
                 // code pour enlever les espaces au début et à la fin 
