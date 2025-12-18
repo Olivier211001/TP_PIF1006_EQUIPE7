@@ -25,7 +25,9 @@ namespace PIF1006_tp1
 
         public override string ToString()
         {
-            return base.ToString(); // Modifier ce code pour retourner une représentation plus cohérente d'un état et de ses transitions vers d'autres états
+            string printState = "";
+            if (IsFinal) printState = "(" + Name + ")"; else printState = Name;
+            return printState; 
         }
     }
 }

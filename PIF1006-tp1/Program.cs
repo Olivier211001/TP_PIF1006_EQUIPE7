@@ -67,6 +67,7 @@ namespace PIF1006_tp1
             Console.WriteLine("Membre de l'équipe :");
             Console.WriteLine("Olivier Lafleur, LAFO83100101");
             Console.WriteLine("Majda Lyna Lemrini,LEMM74510008");
+            Console.WriteLine("Akram Adouani ,ADOA13088203");
             Console.WriteLine("======================================\n");
             // Étape(2)
             // fichier d'automate chargé au démarrage *Modifier le fichier Test.txt au besoin*
@@ -78,6 +79,7 @@ namespace PIF1006_tp1
             }
             else{
                 Automate automate = new Automate(filePath);
+                Console.WriteLine(automate.ToString());
             }
         }
     }

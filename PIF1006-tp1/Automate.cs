@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace PIF1006_tp1
 {
@@ -124,9 +127,10 @@ namespace PIF1006_tp1
                 // premierTerme is transition ? 
                 if (premierTerme.Equals("transition", StringComparison.OrdinalIgnoreCase)){
                     foreach(var state in States){
-                        if(state.Equals(parts[1])){
-                           // rendu ici
-                           // state.Transitions. 
+                        string nameState = state.Name;
+                        State stateTransit = States.Where(s => s.Name == parts[3]).FirstOrDefault();
+                        if (nameState.Equals(parts[1])){
+                            state.Transitions.Add(new Transition(Convert.ToChar(parts[2]), stateTransit));
                         }
                     }
                 }
@@ -159,9 +163,32 @@ namespace PIF1006_tp1
 
         public override string ToString()
         {
-            // Vous devez modifier cette partie de sorte à retourner un équivalent string qui décrit tous les états et
-            // la table de transitions de l'automate.
-            return base.ToString(); // On ne retournera donc pas le ToString() par défaut
+            if(States == null || States.Count == 0)
+            {
+                return "aucun state présent";
+            }
+            
+            // meilleur méthode que j'ai trouvé avec un stringBuilder :)
+            var printAutomate = new StringBuilder();
+
+            foreach (var state in States)
+            {
+                if (state.Name.Equals(InitialState.Name))
+                {
+                    printAutomate.AppendLine("[" + state.ToString() + "]");
+                }
+                else
+                {
+                    printAutomate.AppendLine(state.ToString());
+                }
+                foreach(Transition transition in state.Transitions)
+                {
+                    printAutomate.AppendLine(" ");
+                    printAutomate.AppendLine(" " + transition.ToString());
+                }
+                printAutomate.AppendLine(" ");
+            }
+            return printAutomate.ToString();
         }
     }
 }

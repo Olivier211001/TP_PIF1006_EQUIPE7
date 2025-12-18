@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\test.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\test.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|solutionrelative:pif1006-tp1\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9645B76A-BC5D-4184-AF6D-7C6AB6EAE939}|PIF1006-tp1\\PIF1006-tp1.csproj|c:\\math_info2\\projet_session\\pif1006 - travail #1 - solution de base\\pif1006\\pif1006-tp1\\transition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Test.txt",
               "DocumentMoniker": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Test.txt",
               "RelativeDocumentMoniker": "PIF1006-tp1\\Test.txt",
@@ -42,7 +42,8 @@
               "RelativeToolTip": "PIF1006-tp1\\Test.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-11T21:51:17.847Z"
+              "WhenOpened": "2025-11-11T21:51:17.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,43 +53,46 @@
               "RelativeDocumentMoniker": "PIF1006-tp1\\Transition.cs",
               "ToolTip": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Transition.cs",
               "RelativeToolTip": "PIF1006-tp1\\Transition.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:30:55.045Z"
+              "WhenOpened": "2025-11-11T20:30:55.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\State.cs",
               "RelativeDocumentMoniker": "PIF1006-tp1\\State.cs",
               "ToolTip": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\State.cs",
               "RelativeToolTip": "PIF1006-tp1\\State.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:30:46.498Z"
+              "WhenOpened": "2025-11-11T20:30:46.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Program.cs",
               "RelativeDocumentMoniker": "PIF1006-tp1\\Program.cs",
               "ToolTip": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Program.cs",
               "RelativeToolTip": "PIF1006-tp1\\Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAiwE4AAAARAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAArwEoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T20:29:59.414Z"
+              "WhenOpened": "2025-11-11T20:29:59.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Automate.cs",
               "DocumentMoniker": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Automate.cs",
               "RelativeDocumentMoniker": "PIF1006-tp1\\Automate.cs",
               "ToolTip": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\Automate.cs",
               "RelativeToolTip": "PIF1006-tp1\\Automate.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAswGAAAAAVAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAewLoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T20:29:28.722Z",
               "EditorCaption": ""
