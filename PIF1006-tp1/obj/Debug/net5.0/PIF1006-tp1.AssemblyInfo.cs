@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PIF1006-tp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5752f219ced0f7af0dffa3678a2d4e5568df51e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a688dd52d6953a6d02892e3697852eda59081ec5")]
 [assembly: System.Reflection.AssemblyProductAttribute("PIF1006-tp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PIF1006-tp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

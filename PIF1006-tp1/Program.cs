@@ -63,7 +63,7 @@ namespace PIF1006_tp1
             ////////////////////////////// code ICI //////////////////////////////////////////////////////////////////////////
             // Étape(1)
             Console.WriteLine("======================================");
-            Console.WriteLine("Nom de l'application : TP automate PIF1006 ");
+            Console.WriteLine("Nom de l'application : TP automate PIF1006");
             Console.WriteLine("Membre de l'équipe :");
             Console.WriteLine("Olivier Lafleur, LAFO83100101");
             Console.WriteLine("Majda Lyna Lemrini,LEMM74510008");
