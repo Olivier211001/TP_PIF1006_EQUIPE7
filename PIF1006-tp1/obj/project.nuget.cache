@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "L4rgLWkFWDyQ+5u0AA1+TWFPPDdtDOAZxtmdFWY/R08agy8E5nW7EbeRliSO9gQLKy56gvrIQ03uKsH/6tbn3A==",
+  "dgSpecHash": "yuxvQcDtNbo=",
   "success": true,
-  "projectFilePath": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\PIF1006-tp1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/PIF1006-tp1.csproj",
+  "expectedPackageFiles": [
+    "/Users/akram/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/akram/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/akram/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

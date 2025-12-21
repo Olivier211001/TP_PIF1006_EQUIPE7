@@ -17,6 +17,8 @@ namespace PIF1006_tp1
         public List<State> States { get; private set; }
         public bool IsValid { get; private set; }
 
+        private List<string> erreurs = new List<string>();
+
         public Automate(string filePath)
         {
             States = new List<State>();
@@ -59,18 +61,61 @@ namespace PIF1006_tp1
 
             ///////////////////////////////////////////////////////////////code de la solution ICI///////////////////////////////////////////////////////////////////
             // On valide si le fichier est vide
+            erreurs.Clear();
+            States.Clear();
+            InitialState = null;
+            CurrentState = null;
+            IsValid = true;
+
             if (string.IsNullOrWhiteSpace(filePath)){
-                throw new ArgumentException("filePath est vide.");
+                erreurs.Add("filePath est vide.");
+                IsValid = false;
+                PrintErreurs();
+                return;
             }
             // On valide si le fichier est introuvables    
             if (!File.Exists(filePath)){
-                throw new FileNotFoundException("Fichier introuvable.", filePath);
+                erreurs.Add("Fichier introuvable.");
+                IsValid = false;
+                PrintErreurs();
+                return;
             }
             // setter les états
             setStates(filePath);
             // setter les transitions
             setTransitions(filePath);
 
+                     if (States == null || States.Count == 0)
+            {
+                erreurs.Add("Automate invalide : aucun état défini.");
+                IsValid = false;
+            }
+
+            if (InitialState == null)
+            {
+                erreurs.Add("Automate invalide : aucun état initial défini.");
+                IsValid = false;
+            }
+
+            if (IsValid)
+            {
+                CurrentState = InitialState;
+            }
+
+            Console.WriteLine("DEBUG States.Count = " + States.Count);
+            Console.WriteLine("DEBUG InitialState = " + (InitialState == null ? "null" : InitialState.Name));
+            Console.WriteLine("DEBUG IsValid = " + IsValid);
+
+            PrintErreurs();
+        }
+
+        private void PrintErreurs()
+        {
+            if (erreurs.Count == 0) return;
+            Console.WriteLine("=== Résumé du chargement de l'automate ===");
+            foreach (var e in erreurs)
+                Console.WriteLine(e);
+            Console.WriteLine("==========================================");
         }
 
         private void setStates(string filePath){
@@ -90,21 +135,41 @@ namespace PIF1006_tp1
                 // premierTerme is state ? 
                 if (premierTerme.Equals("state", StringComparison.OrdinalIgnoreCase)){
                     // État final ? 
-                    if (parts[2] == "1"){
-                        State newState = new State(parts[1], true); // création de l'état 
-                        if (parts[3] == "1") // État initial ? 
+                    if (parts.Length < 4)
+                    {
+                        erreurs.Add("ligne state invalide");
+                        IsValid = false;
+                        continue;
+                    }
+
+                    bool isFinal = parts[2] == "1";
+                    bool isInit = parts[3] == "1";
+
+                    State existing = States.FirstOrDefault(s => s.Name == parts[1]);
+
+                    if (existing == null){
+                        State newState = new State(parts[1], isFinal); // création de l'état 
+                        if (isInit) // État initial ? 
                         {
+                            if (InitialState != null && InitialState != newState)
+                            {
+                                erreurs.Add("plusieurs états initiaux détectés.");
+                                IsValid = false;
+                            }
                             InitialState = newState;
                         }
                         States.Add(newState); // ajout dans la liste d'états 
                     }
                     else{
-                        State newState = new State(parts[1], false); // création de l'état 
-                        if (parts[3] == "1") // État initial ? 
+                        if (isInit)
                         {
-                            InitialState = newState;
+                            if (InitialState != null && InitialState != existing)
+                            {
+                                erreurs.Add("plusieurs états initiaux détectés.");
+                                IsValid = false;
+                            }
+                            InitialState = existing;
                         }
-                        States.Add(newState); // ajout dans la liste d'états 
                     }
                 }
             }
@@ -126,39 +191,97 @@ namespace PIF1006_tp1
                 }
                 // premierTerme is transition ? 
                 if (premierTerme.Equals("transition", StringComparison.OrdinalIgnoreCase)){
-                    foreach(var state in States){
-                        string nameState = state.Name;
-                        State stateTransit = States.Where(s => s.Name == parts[3]).FirstOrDefault();
-                        if (nameState.Equals(parts[1])){
-                            state.Transitions.Add(new Transition(Convert.ToChar(parts[2]), stateTransit));
-                        }
+                    if (parts.Length < 4 || parts[2].Length != 1)
+                    {
+                        erreurs.Add("transition invalide.");
+                        IsValid = false;
+                        continue;
                     }
+
+                    char symbole = parts[2][0];
+                    if (symbole != '0' && symbole != '1')
+                    {
+                        erreurs.Add("symbole de transition invalide (doit être 0 ou 1).");
+                        continue;
+                    }
+
+                    State stateTransit = States.Where(s => s.Name == parts[3]).FirstOrDefault();
+                    State source = States.Where(s => s.Name == parts[1]).FirstOrDefault();
+
+                    if (source == null || stateTransit == null)
+                    {
+                        erreurs.Add("transition ignorée (état source ou destination inexistant).");
+                        continue;
+                    }
+
+                    if (source.Transitions.Any(t => t.Input == symbole))
+                    {
+                        erreurs.Add("automate non déterministe (deux transitions avec le même symbole pour un même état).");
+                        IsValid = false;
+                        continue;
+                    }
+
+                    source.Transitions.Add(new Transition(symbole, stateTransit));
                 }
             }
         }
 
-        public bool Validate(string input)
+      public bool Validate(string input)
+{
+    bool isValid = true;
+    Reset();
+
+    // Vous devez transformer l'input en une liste / un tableau de caractères (char) et les lire un par un;
+    // L'automate doit maintenant à jour son "CurrentState" en suivant les transitions et en respectant l'input.
+    // Considérez que l'automate est déterministe et que même si dans les faits on aurait pu mettre plusieurs
+    // transitions possibles pour un état et un input donné, le 1er trouvé dans la liste est le chemin emprunté.
+    // Si aucune transition n'est trouvé pour un état courant et l'input donné, cela doit retourner faux;
+    // Si tous les caractères ont été pris en compte, on vérifie si l'état courant est final ou non et on retourne
+    // vrai ou faux selon.
+
+    // VOUS DEVEZ OBLIGATOIREMENT AFFICHER la suite des états actuel, input lu, et état transité pour qu'on puisse
+    // suivre le déroulement de l'analyse.
+
+    if (!IsValid || CurrentState == null)
+        return false;
+
+    if (string.IsNullOrEmpty(input))
+    {
+        Console.WriteLine("État initial : " + CurrentState.Name + " (final = " + CurrentState.IsFinal + ")");
+        return CurrentState.IsFinal;
+    }
+
+    foreach (char c in input)
+    {
+        if (c != '0' && c != '1')
         {
-            bool isValid = true;
-            Reset();
-
-            // Vous devez transformer l'input en une liste / un tableau de caractères (char) et les lire un par un;
-            // L'automate doit maintenant à jour son "CurrentState" en suivant les transitions et en respectant l'input.
-            // Considérez que l'automate est déterministe et que même si dans les faits on aurait pu mettre plusieurs
-            // transitions possibles pour un état et un input donné, le 1er trouvé dans la liste est le chemin emprunté.
-            // Si aucune transition n'est trouvé pour un état courant et l'input donné, cela doit retourner faux;
-            // Si tous les caractères ont été pris en compte, on vérifie si l'état courant est final ou non et on retourne
-            // vrai ou faux selon.
-
-            // VOUS DEVEZ OBLIGATOIREMENT AFFICHER la suite des états actuel, input lu, et état transité pour qu'on puisse
-            // suivre le déroulement de l'analyse.
-
-            return isValid;
+            Console.WriteLine("Symbole invalide '" + c + "'.");
+            return false;
         }
+
+        var transition = CurrentState.Transitions.FirstOrDefault(t => t.Input == c);
+        if (transition == null)
+        {
+            Console.WriteLine("Aucune transition pour l'état '" + CurrentState.Name + "' avec l'input '" + c + "'.");
+            isValid = false;
+            break;
+        }
+
+        Console.WriteLine("État courant : " + CurrentState.Name + ", input lu : '" + c + "', état transité : " + transition.TransiteTo.Name);
+        CurrentState = transition.TransiteTo;
+    }
+
+    if (!isValid)
+        return false;
+
+    Console.WriteLine("État final atteint : " + CurrentState.Name + " (final = " + CurrentState.IsFinal + ")");
+    return CurrentState.IsFinal;
+}
 
         public void Reset()
         {
             // Vous devez faire du code pour indiquer ce que signifie réinitialiser l'automate avant chaque validation.
+            CurrentState = InitialState;
         }
 
         public override string ToString()

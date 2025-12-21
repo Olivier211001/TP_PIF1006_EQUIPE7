@@ -1,86 +1,75 @@
 ﻿using System;
-using System.IO;
-
-
+using System.Text;
 
 namespace PIF1006_tp1
 {
-    /// <summary>
-    /// AVANT D'ENTAMER VOTRE TRAVAIL, SVP, VEUILLEZ BIEN LIRE ATTENTIVEMENT LES INSTRUCTIONS ET DIRECTIONS EN COMMENTAIRES DANS LES DIFFÉRENTS
-    /// FICHIERS.
-    /// 
-    /// LES CLASSES ET LEURS MEMBRES PRÉDÉFINIS DOIVENT RESTER TELS QUELS.  VOUS POUVEZ AJOUTER DES MÉTHODES PRIVÉES AU BESOIN, MAIS AU MINIMUM
-    /// AJOUTER LE CODE MANQUANT (ET CRÉER LES FICHIERS EN ENTRÉE PERTINENTS) PERMETTANT DE RÉALISER LES FONCTIONNALITÉS DEMANDÉES.
-    /// 
-    /// VOUS DEVEZ TRAVAILLER EN C# .NET.  LE PROJET EST EN .NET 5.0 AFIN DE S'ASSURER D'UNE COMPATIBILITÉ POUR TOUS ET TOUTES, MAIS VOUS ÊTES
-    /// INVITÉ/E/S À UTILISER LA DERNIÈRE VERSION DU FRAMEWORK .NET (8.0).
-    /// </summary>
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //---------------------------------------------------------------------------------------------------------------------------
-            // Vous devez faire une application dont les étapes d'interactions utilisateurs vont exactement comme suit:
-            //
-            //      (1) Afficher une entête en console comportant:
-            //          -> Nom de votre application
-            //          -> Liste de vos noms complets et codes permanents
-            //
-            //      (2) Charger un fichier en spécifiant le chemin (relatif) du fichier.  Vous pouvez charger un fichier par défaut au démarrage;
-            //          ->  Pour le format et la façon de charger le fichier, référez-vous aux détails en commentaire dans la méthode LoadFromFile()
-            //              de la classe Automate.
-            //          ->  Si après chargement du fichier l'automate est invalide (sa propriété IsValid est à faux), l'application se ferme suite à
-            //              l'appuie sur ENTER par l'utilisateur.
-            //      (3) La représentation de l'automate doit être affichée à la console sous la forme d'une liste des états et la liste des
-            //          transitions de chacune d'entre elles, à la manière d'une pseudo table d'action. Si l'état est un état final cela
-            //          doit être apparent;
-            //              Par exemple:
-            //                  [(s0)]
-            //                      --0--> s1
-            //                      --1--> s0
-            //                  s1
-            //                      --0--> s1
-            //                      --1--> s2
-            //                  s2
-            //                      --0--> s1
-            //                      --1--> s3
-            //                  (s3)
-            //
-            //              Où s0 et s3 sont des états finaux (parenthèses), s0 est l'état initial (square brackets) et
-            //              s3 n'a pas de transition vers d'autres états
-            //          ->  Vous DEVEZ surdéfinir les méthodes ToString() des différentes classes fournies de sorte à faciliter l'affichage
-            //
-            //      (4) Soumettre un input en tant que chaîne de 0 ou de 1
-            //          ->  Assurez-vous que la chaine passée ne contient QUE ces caractères
-            //              avant d'envoyer n'est pas obligatoire, mais cela ne doit pas faire planter de l'autre coté;
-            //          ->  Un message doit indiquer si c'est accepté ou rejeté.
-            //          ->  Suite à cela, on doit demander à l'utilisateur s'il veut enter un nouvel input plutôt que de quitter
-            //              afin de faire des validations en rafales.
-            //
-            //      (5) Au moment où l'utilisateur choisit de quitter, un message s'affiche lui disant que l'application va se fermer après
-            //          avoir appuyé sur ENTER.
+            Console.OutputEncoding = Encoding.UTF8;
 
-            ////////////////////////////// code ICI //////////////////////////////////////////////////////////////////////////
-            // Étape(1)
-            Console.WriteLine("======================================");
+            Console.WriteLine("================================================");
             Console.WriteLine("Nom de l'application : TP automate PIF1006");
             Console.WriteLine("Membre de l'équipe :");
             Console.WriteLine("Olivier Lafleur, LAFO83100101");
-            Console.WriteLine("Majda Lyna Lemrini,LEMM74510008");
-            Console.WriteLine("Akram Adouani ,ADOA13088203");
-            Console.WriteLine("======================================\n");
-            // Étape(2)
-            // fichier d'automate chargé au démarrage *Modifier le fichier Test.txt au besoin*
-            string fileName = "Test.txt"; // nom du fichier
-            // chemin absolue du fichier
-            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
-            if (!File.Exists(filePath)){
-                Console.WriteLine($"Fichier non trouvé : {filePath}");
+            Console.WriteLine("Majda Lyna Lemrini, LEMM74510008");
+            Console.WriteLine("Akram Adouani, ADOA13088203");
+            Console.WriteLine("================================================");
+            Console.WriteLine();
+
+            Console.WriteLine("Entrez le nom du fichier d'automate (ENTER = Test.txt) : ");
+            string filePath = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                filePath = "Test.txt";
             }
-            else{
-                Automate automate = new Automate(filePath);
-                Console.WriteLine(automate.ToString());
+
+            Automate automate = new Automate(filePath);
+
+            if (!automate.IsValid)
+            {
+                Console.WriteLine();
+                Console.WriteLine("L'automate chargé est invalide. Impossible de valider des chaînes.");
+                Console.WriteLine("Appuyez sur ENTER pour quitter.");
+                Console.ReadLine();
+                return;
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Automate chargé avec succès.");
+            Console.WriteLine();
+            Console.WriteLine("Représentation de l'automate :");
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine(automate.ToString());
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine();
+
+            while (true)
+            {
+                Console.Write("Entrez une chaîne composée de 0 et 1 (ENTER pour quitter) : ");
+                string input = Console.ReadLine() ?? string.Empty;
+
+                if (string.IsNullOrEmpty(input))
+                {
+                    break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("=== Déroulement de l'analyse ===");
+
+                bool accepte = automate.Validate(input);
+
+                Console.WriteLine("================================");
+                Console.WriteLine(accepte
+                    ? "RÉSULTAT : CHAÎNE ACCEPTÉE"
+                    : "RÉSULTAT : CHAÎNE REJETÉE");
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Fin du programme. Appuyez sur ENTER pour quitter.");
+            Console.ReadLine();
         }
     }
 }

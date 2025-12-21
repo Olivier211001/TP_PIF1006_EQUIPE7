@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\PIF1006-tp1.csproj": {}
+    "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/PIF1006-tp1.csproj": {}
   },
   "projects": {
-    "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\PIF1006-tp1.csproj": {
+    "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/PIF1006-tp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\PIF1006-tp1.csproj",
+        "projectUniqueName": "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/PIF1006-tp1.csproj",
         "projectName": "PIF1006-tp1",
-        "projectPath": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\PIF1006-tp1.csproj",
-        "packagesPath": "C:\\Users\\olivi\\.nuget\\packages\\",
-        "outputPath": "C:\\math_info2\\projet_session\\PIF1006 - Travail #1 - Solution de base\\PIF1006\\PIF1006-tp1\\obj\\",
+        "projectPath": "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/PIF1006-tp1.csproj",
+        "packagesPath": "/Users/akram/.nuget/packages/",
+        "outputPath": "/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\olivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/akram/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -59,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

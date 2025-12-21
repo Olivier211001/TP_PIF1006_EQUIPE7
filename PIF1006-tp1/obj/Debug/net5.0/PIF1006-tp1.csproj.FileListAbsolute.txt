@@ -1,64 +1,17 @@
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.exe
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.deps.json
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.json
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.dev.json
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.dll
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\ref\PIF1006-tp1.dll
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.pdb
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csprojAssemblyReference.cache
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfoInputs.cache
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfo.cs
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csproj.CoreCompileInputs.cache
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.dll
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\ref\PIF1006-tp1.dll
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.pdb
-C:\Users\Adamz\source\repos\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.genruntimeconfig.cache
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.exe
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.deps.json
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.json
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.dev.json
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.dll
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\ref\PIF1006-tp1.dll
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.pdb
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csprojAssemblyReference.cache
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.GeneratedMSBuildEditorConfig.editorconfig
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfoInputs.cache
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfo.cs
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csproj.CoreCompileInputs.cache
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.dll
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\ref\PIF1006-tp1.dll
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.pdb
-E:\OneDrive - Personnel\OneDrive\Documents\Université\Enseignement\Cours\PIF-1006 (AUT-24)\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.genruntimeconfig.cache
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.exe
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.deps.json
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.json
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.dev.json
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.dll
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.pdb
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfoInputs.cache
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfo.cs
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csproj.CoreCompileInputs.cache
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.dll
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\refint\PIF1006-tp1.dll
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.pdb
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.genruntimeconfig.cache
-C:\Users\olivi\Downloads\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\ref\PIF1006-tp1.dll
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.exe
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.deps.json
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.json
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.runtimeconfig.dev.json
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.dll
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\PIF1006-tp1.pdb
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfoInputs.cache
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.AssemblyInfo.cs
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.csproj.CoreCompileInputs.cache
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.sourcelink.json
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.dll
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\refint\PIF1006-tp1.dll
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.pdb
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\PIF1006-tp1.genruntimeconfig.cache
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\obj\Debug\net5.0\ref\PIF1006-tp1.dll
-C:\math_info2\projet_session\PIF1006 - Travail #1 - Solution de base\PIF1006\PIF1006-tp1\bin\Debug\net5.0\Test.txt
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/Test.txt
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1.deps.json
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1.runtimeconfig.json
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1.runtimeconfig.dev.json
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1.dll
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/bin/Debug/net5.0/PIF1006-tp1.pdb
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.AssemblyInfoInputs.cache
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.AssemblyInfo.cs
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.csproj.CoreCompileInputs.cache
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.sourcelink.json
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.dll
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/refint/PIF1006-tp1.dll
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.pdb
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/PIF1006-tp1.genruntimeconfig.cache
+/Users/akram/Library/Mobile Documents/com~apple~CloudDocs/Études 2025/UQTR/session 3 (automne 2025)/Mathématiques pour informaticien 2/Projet/git/TP_PIF1006_EQUIPE7/PIF1006-tp1/obj/Debug/net5.0/ref/PIF1006-tp1.dll

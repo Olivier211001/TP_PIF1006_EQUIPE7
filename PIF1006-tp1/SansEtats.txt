@@ -1,0 +1,2 @@
+transition q0 0 q1
+transition q1 1 q0
